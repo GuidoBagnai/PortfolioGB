@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* display: flex; */
+}
+
+@keyframes fromLeft {
+   0%{opacity: 0; left: 25%;}
+   100%{ opacity: 1; left: 18%;}
+}
+
+@keyframes about {
+    0%{opacity: 0; left: 60%;}
+    
+    100%{ opacity: 1; left: 48%;}
+ }
+
+@keyframes fromRight {
+    0%{opacity: 0; right: 500px; top: 0px;}
+    100%{ opacity: 1; right: 0px; top: 0px;}
+ }
+
+ @keyframes fromBelow2 {
+    0%{opacity: 0; top: 80%;}
+    100%{ opacity: 1; top: 33%;}
+ }
+
+ @keyframes fromBelow {
+    0%{opacity: 0; top: 500px;}
+    100%{ opacity: 1; top: 0px;}
+ }
+
+ @keyframes fromAbove {
+    0%{opacity: 0; bottom: 500px;}
+    100%{ opacity: 1; bottom: 0px;}
+ }
+
+ @keyframes line {
+    0%{transform: scaleX(0);}
+    30%{transform: scaleX(0);}
+    100%{transform: scaleX(1);}
+ }
+
+
+@font-face {
+    font-family: Fog2;
+    src: url(fonts/FogtwoNo5.ttf);
+  }
+
+  @font-face {
+    font-family: Sitrus;
+    src: url(fonts/DxSitrus-Expanded.otf);
+  }
+
+body {
+    height: 100vh;
+    width: auto;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.navbar {
+    width: auto;
+    height: 82px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+}
+
+ .nav-link {
+    border: 0px solid;
+    background: none;
+    width: 250px;
+    height: 30px;
+    margin-top: 20px;
+    animation: fromAbove 2.0s;
+    position: relative;
+ }
+
+ .link {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 18pt;
+    transition: 200ms ease-in-out;
+ }
+
+ .link:hover {
+    color: #DAFF00;
+ }
+
+.section {
+    height: 60vh;
+}
+
+ .line {
+    width: 70%;
+    height: 1px;
+    border-bottom: 1px solid #ffffff;
+    margin: auto;
+    margin-top: 22px;
+    animation: line 3.5s;
+ }
+
+ .about {
+    font-family: 'Sitrus';
+    font-size: 87pt;
+    color: #5800FF;
+    position: absolute;
+    z-index: 20;
+    top: 18%;
+    left: 48%;
+    animation: about 1.5s;
+ }
+
+.text {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 200;
+    color: #ffffff;
+    font-size: 16pt;
+    width: 705px;
+    z-index: 10;
+    position: absolute;
+    top: 33%;
+    left: 51%;
+    animation: fromBelow2 1s;
+    text-align-last: justify;
+}
+
+.img1 {
+    width: 643px;
+    position: absolute;
+    left: 18%;
+    animation: fromLeft 1s;
+}
+
+ .line2 {
+    width: 70%;
+    height: 1px;
+    border-bottom: 1px solid #ffffff;
+    margin: auto;
+    margin-top: 170px;
+    animation: line 3.5s;
+ }
+
+ .footer {
+    width: auto;
+    height: 66px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+ }
+
+ .foot-link {
+    border: 0px solid;
+    background: none;
+    width: 250px;
+    height: 40px;
+    margin-top: 40px;
+    position: relative;
+ }
+
+ .flink {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24pt;
+    position: relative;
+    animation: fromBelow 2.5s;
+    transition: 200ms ease-in-out;
+ }
+
+ .flink:hover {
+    color: #DAFF00;
+ }
+
+
+
